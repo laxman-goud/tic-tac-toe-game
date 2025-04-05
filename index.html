@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Laxman">
+    
+    <!-- Title and Favicon -->
+    <title>Tic Tac Toe</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="game">
+            <!-- Game Title -->
+            <h1>Tic Tac Toe</h1>
+
+            <!-- Display current player's turn or result -->
+            <h3 class="title"></h3>
+
+            <!-- Game Grid (3x3) -->
+            <div class="boxes">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+
+            <!-- Scoreboard -->
+            <p class="p1Score"></p>
+            <p class="p2Score"></p>
+
+            <!-- Game Control Buttons -->
+            <button id="reset">Reset Game</button>
+            <button id="restart" class="hide">Restart Game</button>
+        </div>
+
+    </main>
+    <!-- JavaScript File -->
+    <script src="app.js"></script>
+</body>
+
+</html>

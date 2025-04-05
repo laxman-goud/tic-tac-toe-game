@@ -1,0 +1,133 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Galindo&family=Gidole&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Base body styling */
+body {
+    background-color: #194a7a;
+    font-family: "Space Mono", monospace;
+    color: #d1dbe4;
+    height: 100%;
+}
+
+
+/* Game container */
+.game {
+    width: 100vw; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+/* Box container (grid wrapper) */
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 66vw;
+    gap: 0.3rem;
+}
+
+/* Individual box style */
+.box {
+    /* width: clamp(5rem, 18vw, 19vw);
+    height: clamp(5rem, 18vw, 19vw); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    background-color: #00ffccd9;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+/* Reset and Restart button styles */
+#reset,
+#restart {
+    width: 8rem;
+    height: 2rem;
+    padding: 0.3rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.2rem;
+}
+
+/* Media Query: Desktop view */
+@media (min-width: 851px) {
+    .boxes {
+        width: 60vw;
+    }
+
+    .box {
+        width: 17vw;
+        height: 10rem;
+        font-size: 4rem;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .game > h1 {
+        font-size: 2.2rem;
+    }
+
+    .p1Score,
+    .p2Score {
+        font-size: 1.2rem;
+    }
+
+    #reset,
+    #restart {
+        width: 16rem;
+        height: 3.3rem;
+        font-size: 1.4rem;
+    }
+}
+
+/* Media Query: Mobile view */
+@media (max-width: 600px) {
+    .boxes {
+        width: 80vw;
+    }
+
+    .box {
+        width: 22vw;
+        height: 5.2rem;
+    }
+}
+
+/* Media Query: Tablet view */
+@media (max-width: 850px) and (min-width: 601px) {
+    .box {
+        width: 18vw;
+        height: 7.3rem;
+    }
+
+    #reset,
+    #restart {
+        width: 13rem;
+        height: 2.3rem;
+        font-size: 1.1rem;
+    }
+}
+
+/* Utility class to hide elements */
+.hide {
+    display: none;
+}
+
+/* Styling for disabled boxes (after click) */
+.box:disabled {
+    color: black;
+}
+
+
+
