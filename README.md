@@ -41,4 +41,4 @@ GitHub: [@laxman-goud](https://github.com/laxman-goud)
 
 ---
 
-Feel free to fork, suggest improvements, or add a live demo link/screenshots as desired!
+Feel free to fork, suggest improvements.
